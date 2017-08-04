@@ -35,6 +35,12 @@ class Row {
   private $shipping;
   private $custom_label_0;
 
+  public function get($key) {
+    if ($this->{$key}) {
+      return $this->{$key};
+    }
+  }
+
   public function getAsCsvArray() {
     $fields = $this->getAsCsvHeader();
 

@@ -27,4 +27,5 @@ class Catalog {
     }
     return $data;
   }
+
 }
