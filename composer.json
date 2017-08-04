@@ -1,0 +1,6 @@
+{
+    "name": "eiriksm/facebook-product-catalog",
+    "autoload": {
+        "psr-4": {"Eiriksm\\FacebookProductCatalog": "src"}
+    }
+}
