@@ -34,6 +34,21 @@ class Row {
   private $size;
   private $shipping;
   private $custom_label_0;
+  private $adult = 'no';
+
+  /**
+   * @return mixed
+   */
+  public function getAdult() {
+    return $this->adult;
+  }
+
+  /**
+   * @param mixed $adult
+   */
+  public function setAdult($adult) {
+    $this->adult = $adult;
+  }
 
   public function get($key) {
     if ($this->{$key}) {
@@ -84,6 +99,7 @@ class Row {
       'size',
       'shipping',
       'custom_label_0',
+      'adult',
     );
   }
 
